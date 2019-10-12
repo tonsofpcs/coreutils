@@ -828,6 +828,11 @@ main (int argc, char **argv)
           output_block_size = 1024 * 1024;
           break;
 
+        case 'g':
+          human_output_opts = 0;
+          output_block_size = 1024 * 1024 * 1024;
+          break;
+
         case 'l':
           opt_count_all = true;
           break;
